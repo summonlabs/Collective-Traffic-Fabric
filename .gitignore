@@ -1,0 +1,42 @@
+# Collective Traffic Fabric - build and run artefacts that must never be committed.
+# Copyright 2026 Summon Software Labs.
+
+# CMake
+/build/
+/build-*/
+/out/
+/install/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+*.vcxproj
+*.vcxproj.filters
+*.sln
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.a
+*.so
+*.dylib
+*.exe
+
+# Local development scratch used by tools/compile-check.cmd
+/build-scratch/
+
+# Test output: snapshots, temporary files and logs written by the suites
+ctf-test-*.bin
+ctf-adv-*.bin
+*.ctfs
+*.log
+
+# Editors and operating systems
+.vs/
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
